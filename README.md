@@ -27,6 +27,10 @@ Shared CNN backbone with separate actor (policy) and critic (value) heads.
 
 ## Results
 
+Both agents show clear learning signals over the course of training. PPO outperforms DQN in final reward, consistent with its on-policy advantage in environments with sparse rewards.
+
+> **Note:** DQN results are logged per episode; PPO results are logged per environment step. DQN ran approximately 119,000 total steps (119 episodes × ~1,000 steps/episode), making the two runs roughly comparable in total experience.
+
 ### DQN Training Rewards
 
 Episode reward and 10-episode moving average over 119 training episodes. The agent starts with near-zero rewards during exploration, then shows a clear learning signal after ~60 episodes as log-collection behavior emerges. Final moving average reaches ~0.08, with peak episode rewards up to ~0.16.
@@ -101,15 +105,11 @@ python scripts/train_ppo.py
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
-| `TOTAL_TIMESTEPS` | 1000 | Training timesteps |
+| `TOTAL_TIMESTEPS` | 85000 | Training timesteps |
 | `TOTAL_EPISODES` | 50 | Evaluation episodes after training |
 | `MAX_STEPS_PER_EPISODE` | 1000 | Episode length cap |
 | `SHOWFRAMES` | `False` | Save episode frames to disk |
 | `LEARNING_RATE` | `1e-3` | PPO learning rate |
-
-## Demo Video
-
-[![MineRL DQN Agent](https://github.com/user-attachments/assets/62f2840a-2c18-41bb-a013-6b0cf39372be)](https://drive.google.com/file/d/1ijB8jZFLVUQXNKsgVVMk-LmDZeFx2NTq/view?usp=drive_link)
 
 ## Author
 
