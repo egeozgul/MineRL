@@ -64,8 +64,8 @@ Full write-up: [`docs/final_report.pdf`](docs/final_report.pdf)
 ## Installation
 
 ```bash
-git clone https://github.com/Pateltirths1012/Efficient-item-collection-in-minecraft.git
-cd Efficient-item-collection-in-minecraft
+git clone https://github.com/egeozgul/MineRL.git
+cd MineRL
 
 python -m venv .venv
 # Windows
@@ -103,19 +103,18 @@ python scripts/train_ppo.py
 
 [![MineRL DQN Agent](https://github.com/user-attachments/assets/62f2840a-2c18-41bb-a013-6b0cf39372be)](https://drive.google.com/file/d/1ijB8jZFLVUQXNKsgVVMk-LmDZeFx2NTq/view?usp=drive_link)
 
-## Authors
+## Author
 
-- Tirth Patel
-- Ege Ozgul
+[Ege Ozgul](https://github.com/egeozgul)
 
 ## Citation
 
 ```bibtex
-@misc{Tirth2025minerl,
+@misc{Ozgul2025minerl,
   title={Efficient Item Collection in Minecraft},
-  author={Tirth Patel and Ege Ozgul},
+  author={Ege Ozgul},
   year={2025},
   publisher={GitHub},
-  howpublished={\url{https://github.com/Pateltirths1012/Efficient-item-collection-in-minecraft}}
+  howpublished={\url{https://github.com/egeozgul/MineRL}}
 }
 ```
