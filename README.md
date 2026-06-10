@@ -43,8 +43,6 @@ Smoothed reward curve over ~85,000 training steps. Performance stays flat throug
 
 ![PPO training reward plot](results/figures/PPO_training_reward_plot.png)
 
-Full write-up: [`docs/final_report.pdf`](docs/final_report.pdf)
-
 ## Project Structure
 
 ```
@@ -59,9 +57,7 @@ Full write-up: [`docs/final_report.pdf`](docs/final_report.pdf)
 │   ├── figures/                 # Training / evaluation plots
 │   └── ppo/                     # PPO training logs
 ├── docs/
-│   ├── diagrams/                # Model architecture diagrams
-│   ├── final_report.pdf
-│   └── project_proposal.pdf
+│   └── diagrams/                # Model architecture diagrams
 ├── requirements.txt
 └── README.md
 ```
