@@ -6,7 +6,7 @@ A comparative study of **DQN** and **PPO** reinforcement learning agents on the 
 
 | Algorithm | Implementation | Notes |
 |-----------|----------------|-------|
-| DQN | [`notebooks/train_dqn.ipynb`](notebooks/train_dqn.ipynb) | Custom CNN, experience replay, epsilon-greedy exploration |
+| DQN | [`scripts/train_dqn.py`](scripts/train_dqn.py) | Custom CNN, experience replay, epsilon-greedy exploration |
 | PPO | [`scripts/train_ppo.py`](scripts/train_ppo.py) | Stable-Baselines3 with simplified discrete action space |
 
 Both agents use POV (pixel) observations resized to 64×64, a reduced action space (10 discrete actions), and custom reward shaping that rewards log collection.
@@ -50,8 +50,8 @@ Full write-up: [`docs/final_report.pdf`](docs/final_report.pdf)
 ```
 .
 ├── scripts/
+│   ├── train_dqn.py             # DQN training and evaluation
 │   └── train_ppo.py             # PPO training and evaluation
-│   └── train_dqn.ipy            # DQN training and evaluation
 ├── checkpoints/
 │   ├── dqn_50k/                 # DQN weights (50k timesteps)
 │   └── dqn_250k/                # DQN weights (250k timesteps)
@@ -94,7 +94,11 @@ pip install minerl
 
 ### DQN
 
-Open and run [`notebooks/train_dqn.ipynb`](notebooks/train_dqn.ipynb). Pre-trained weights are in [`checkpoints/`](checkpoints/).
+```bash
+python scripts/train_dqn.py
+```
+
+Pre-trained weights are in [`checkpoints/`](checkpoints/).
 
 ### PPO
 
