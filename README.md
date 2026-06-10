@@ -1,6 +1,6 @@
-# Efficient Item Collection in Minecraft
+# Comparative RL Agents on MineRL: DQN vs PPO for Sparse-Reward Object Collection
 
-Reinforcement learning agents for collecting wood logs in Minecraft using the [MineRL](https://minerl.io/) benchmark. This project implements and compares **DQN** and **PPO** on `MineRLObtainDiamondShovel-v0`, with a focus on sample efficiency, training stability, and reward shaping for log collection.
+A comparative study of **DQN** and **PPO** reinforcement learning agents on the [MineRL](https://minerl.io/) benchmark environment `MineRLObtainDiamondShovel-v0`. The project investigates training stability, reward shaping strategies, and algorithmic differences in a challenging sparse-reward 3D environment where agents learn to collect wood logs from pixel observations.
 
 ## Overview
 
